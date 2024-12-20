@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <h2>TO-DO LIST</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-6 border"> LISTA DE TAREAS</div>
+
+
+            <div class="col-6">
+                <div class="row">
+
+                    <h5>Tareas Pendientes: <span id="contadorPendientes">0</span></h5>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="nuevaTarea" placeholder="nueva tarea">
+                            <label for="nuevaTarea">Tarea</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-outline-secondary">
+                            <i class="bi bi-plus-square-fill"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-danger">
+                            <i class="bi bi-trash3"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-warning">
+                            <i class="bi bi-pencil-fill"></i>
+                        </button>
+                        
+
+                    </div>
+                </div>
+                <div class="row">
+
+                    <select class="form-select" aria-label="Default select example">
+
+                        <option selected value="1">Mostrar todas</option>
+                        <option value="2">Completadas</option>
+                        <option value="3">Pendientes</option>
+                    </select>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
